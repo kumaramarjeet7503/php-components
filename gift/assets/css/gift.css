@@ -1,0 +1,120 @@
+.gift-container{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vh;
+  height: 100vw;
+}
+
+.gift-button{
+  border: none;
+  background: #dc0607;
+  color: white;
+  padding: 1vmax 3vmax;
+  border-radius: 6px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.modal-header,.modal-footer{
+  background: white;
+  color: rgb(2, 2, 2);
+}
+
+.redeem-buttom{
+  border: none;
+  background: #dc0607;
+  color: white;
+  padding: 0.5vmax 1vmax;
+  border-radius: 6px;
+  font-size: medium;
+  margin-right: 5px;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 3px 1px grey ;
+}
+
+button{
+  font-family: sans-serif;
+}
+
+
+.redeem-buttom:hover{
+  background: rgb(167, 43, 21);
+}
+
+
+.loader {
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid #dc0607; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.redeem-div{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.modal-header
+{
+  background-color: #dc0607;
+  color: white;
+}
+
+input:focus{
+  outline: none !important ;
+}
+
+input{
+  font-family: cursive;
+}
+
+#balance-div
+{
+  display: flex;
+  font-family: emoji;
+  font-size: large;
+}
+
+/* .balance
+{
+  font-size: large;
+} */
+
+#gift-validity
+{
+  font-family: Math;
+}
+
+.modal-body{
+  background-image: url("http://localhost:8080/images/gift-v4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.gift-image{
+  height: 5vmax;
+width: 5vmax;
+float: right;
+}
+
+.accept-buttom{
+  border: none;
+  background: #dc0607;
+  color: white;
+  padding: 0.5vmax 1vmax;
+  border-radius: 6px;
+  font-size: medium;
+  margin-right: 5px;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 3px 1px grey ;
+}
