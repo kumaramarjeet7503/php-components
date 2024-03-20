@@ -1,0 +1,103 @@
+GET
+match-starts
+
+localhost:8080/game/starts
+
+
+get-matches-by-date
+localhost:8080/game/get-match-by-date?date=2024-03-12
+
+
+
+team-performance
+localhost:8080/game/get-team-performance
+
+
+POST
+create-player
+localhost:8080/game/create-player
+
+json
+{
+     "role": "fielder",
+      "name" : "shivam",
+       "team_id" : 2
+}
+
+
+POST
+create-team
+localhost:8080/game/create-team
+
+
+
+{
+    "name":"teamC",
+     "wins" : 0,
+     "losses": 0,
+     "players" : [
+         {
+            "role": "fielder",
+            "name" : "rohan"
+         },
+                  {
+            "role": "batsmen",
+            "name" : "mohan"
+         },
+         {
+            "role": "batsmen",
+            "name" : "trilochan"
+         },
+                  {
+            "role": "batsmen",
+            "name" : "shivam"
+         },
+                  {
+            "role": "bowler",
+            "name" : "shankar"
+         },
+                  {
+            "role": "bowler",
+            "name" : "ankur"
+         },
+                  {
+            "role": "bowler",
+            "name" : "mayur"
+         }
+     ]
+}
+
+
+POST
+schedule-match
+localhost:8080/game/schedule-match
+
+{
+ "venue":"vankhere",
+  "date":"2024-04-04",
+   "status":"Scheduled"
+}
+
+
+POST
+game-played
+localhost:8080/game/play
+
+{
+    "m_id":4,
+    "host":7,
+    "guest":6,
+    "player_of_the_match":"",
+    "result":""
+}
+
+
+PUT
+game-over
+localhost:8080/game/over
+
+{
+    "m_id":1,
+    "player_of_the_match":2,
+    "result":3
+}
